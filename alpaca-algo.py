@@ -5,9 +5,6 @@ import pandas as pd
 from datetime import datetime, timedelta
 import time
 import random
-BASE_URL = "https://paper-api.alpaca.markets"  # Changed back to paper trading URL without /v2
-KEY_ID = "PK9U1RJGMLB48FZABD9J"
-SECRET_KEY = "qhaLVhnkRDecpa4QlQXDcxw3zxzb3vw29OY87gDl"
 SYMBOL_BARS = "BTC/USD"  # Format for crypto bars
 SYMBOL_POSITION = "BTCUSD"  # Format for positions
 NOTIONAL = 0
@@ -94,8 +91,8 @@ def trade_logically(bars):
     """
     Implement your trading logic here.
     """
-    gods_say_buy = random.choice([True, False])
-    if gods_say_buy:
+    computer_say_buy = random.choice([True, False])
+    if computer_say_buy:
         if VERBOSITY > 1:
             print("\nAttempting to buy Bitcoin...")
         notional = random.randint(1, 100)
