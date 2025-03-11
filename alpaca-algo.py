@@ -1,4 +1,4 @@
-# alpaca.py - never break even!  That's our motto.
+# Never break even!  That's our motto.
 import config 
 from alpaca_trade_api.rest import REST, TimeFrame
 import pandas as pd
